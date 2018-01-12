@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: hind;
+}
+
+html {
+    background-color: #e6e6e9;
+}
+
+body {
+    background-color: #e6e6e9;
+    display: grid;
+    grid-template-columns: 1fr 22em 1fr;
+    min-width: 22em;
+}
+
+@media (min-width: 30em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 30em 1fr;
+    }
+
+    img {
+        src: url(file:///C:/Users/Angela/Documents/HvA/Blok%202/na%20vakantie/HTML-CSS/images/regenboog-groot2.jpg);
+    }
+}
+
+@media (min-width: 50em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 50em 1fr;
+    }
+}
+
+@media (min-width: 60em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 60em 1fr;
+    }
+}
+
+header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+header>form>[type="submit"] {
+    display: none;
+}
+
+img[alt=""]{
+    grid-column-start:2;
+    grid-column-end:3;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+img[alt*="icon"]{
+    height: 2em;
+    width: auto;
+    margin-left: 1em;
+}
+
+header {
+    background-color: white;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header>a>img {
+    height: 2.5em;
+}
+
+header img {
+    display: flex;
+    height: 4em;
+}
+

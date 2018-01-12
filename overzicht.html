@@ -3,92 +3,195 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>NS verhalensite</title>
     <link rel="stylesheet" href="CSS/main.css">
+    <script src="JS/Javascript.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="images/logoNS.JPG" alt="Logo van NS">
         <form>
-            <input type="search">
-            <input type="submit" value="zoeken">
+            <input type="search" placeholder="Zoeken">
+            <input type="submit" value="Zoeken">
         </form>
-        <ul>
-            <li><a href="">Account</a></li>
-        </ul>
+        <img src="images/logoNS.JPG" alt="Logo van NS">
+        <a href="formulier.html"><img src="images/account.jpg" alt="account icon"></a>
     </header>
 
     <section>
-        <h1>99 verhalen</h1>
-        <form>
+       <img src="images/thema-boeken.jpg" alt="">
+        <!-- <h1>99 verhalen</h1>-->
+        <!-- <form>-->
+        <section>
             <fieldset>
-               <legend>Verhalen</legend>
-                <label>
-                    <input type="radio">Alle verhalen</label>
-                <label>
-                    <input type="radio">Meest gelezen</label>
-                <label>
-                    <input type="radio">Meest geliked</label>
-                <label>
-                    <input type="radio">Aanbevolen voor jou</label>
+                <div class="dropdown1">
+                    <button onclick="myFunction1()" class="dropbtn1">Verhalen &#x2c5;</button>
+                    <div id="myDropdown1" class="dropdown-content1">
+
+                        <label>
+                            <input type="radio">Alle verhalen</label>
+                        <label>
+                            <input type="radio">Meest gelezen</label>
+                        <label>
+                            <input type="radio">Meest geliked</label>
+                        <label>
+                            <input type="radio">Aanbevolen voor jou</label>
+                    </div>
+                </div>
             </fieldset>
             <fieldset>
-                <legend>Voor jou</legend>
-                <label>
-                    <input type="radio">Recent gelezen</label>
-                <label>
-                    <input type="radio">Opgeslagen</label>
-                <label>
-                    <input type="radio">Geliked</label>
+                <div class="dropdown2">
+                    <button onclick="myFunction2()" class="dropbtn2">Voor jou &#x2c5;</button>
+                    <div id="myDropdown2" class="dropdown-content2">
+
+                        <label>
+                            <input type="radio">Recent gelezen</label>
+                        <label>
+                            <input type="radio">Opgeslagen</label>
+                        <label>
+                            <input type="radio">Geliked</label>
+                        <label>
+                            <input type="radio">Ongelezen</label>
+                    </div>
+                </div>
             </fieldset>
-        </form>
+            <fieldset>
+                <div class="dropdown3">
+                    <button onclick="myFunction3()" class="dropbtn3">Filter &#x2c5;</button>
+                    <div id="myDropdown3" class="dropdown-content3">
+
+                        <label>
+                            <input type="checkbox">0 - 10 min</label>
+                        <label>
+                            <input type="checkbox">11 - 20 min</label>
+                        <label>
+                            <input type="checkbox">20 min en langer</label>
+                        <label>
+                            <input type="checkbox">Full color</label>
+                        <label>
+                            <input type="checkbox">Zwart - wit</label>
+                    </div>
+                </div>
+            </fieldset>
+            <img src="images/blok.jpg" alt="weergave">
+            <img src="images/lijst.jpg" alt="weergave">
+        </section>
+        <!--</form>-->
     </section>
-
-    <form>
-        <fieldset>
-            <legend>Filter</legend>
-            <fieldset>
-                <legend>Leestijd</legend>
-                <label>
-                    <input type="checkbox">0 - 10 min</label>
-                <label>
-                    <input type="checkbox">11 - 20 min</label>
-                <label>
-                    <input type="checkbox">21 min en langer</label>
-            </fieldset>
-            <label>
-                <input type="checkbox">ongelezen</label>
-            <label>
-                <input type="checkbox">full color</label>
-            <label>
-                <input type="checkbox">zwart-wit</label>
-            <input type="submit" value="Zoeken">
-        </fieldset>
-    </form>
-
+    <h3>Alle verhalen</h3>
     <section>
-        <h3>Alle verhalen</h3>
+        <a href="ongeluk.html"><article>
+            <img src="images/uitgelicht.JPG" alt="icon lamp">
+            <img src="images/ongeluk.JPG" alt="preview verhaal">
+            <h4>ONGELUK</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>5 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>18 x</p>
+                <img src="images/opslaan.png" alt="icon opslaan">
+                <p>9 x</p>
+            </footer>
+        </article></a>
+        <a href="regenboog.html"><article>
+            <img src="images/regenboog.JPG" alt="preview verhaal">
+            <h4>REGENBOOG</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>5 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>18 x</p>
+                <img src="images/opslaan.png" alt="icon opslaan">
+                <p>9 x</p>
+            </footer>
+        </article>
+        </a>
+
+        <a href="recept.html"><article>
+            <img src="images/recept.JPG" alt="preview verhaal">
+            <h4>RECEPT</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>5 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>18 x</p>
+                <img src="images/opslaan.png" alt="icon opslaan">
+                <p>9 x</p>
+            </footer>
+        </article>
+        </a>
         <article>
-            <a href="">
-                <img src="images/ongeluk.JPG" alt="preview verhaal">
-                <h4>ONGELUK</h4>
-
-                <!-- footer toevoegen met metadata -->
-
-            </a>
+            <img src="images/ongeboren.png" alt="preview verhaal">
+            <h4>ONGEBOREN</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>5 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>18 x</p>
+                <img src="images/opslaan.png" alt="icon opslaan">
+                <p>9 x</p>
+            </footer>
         </article>
         <article>
-            <a href="">
-                <img src="images/regenboog.JPG" alt="preview verhaal">
-                <h4>REGENBOOG</h4>
-            </a>
+            <img src="images/angst.png" alt="preview verhaal">
+            <h4>ANGST</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>5 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>18 x</p>
+                <img src="images/opslaan.png" alt="icon opslaan">
+                <p>9 x</p>
+            </footer>
+        </article>
+
+        <article>
+            <img src="images/blind.png" alt="preview verhaal">
+            <h4>BLIND</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>5 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>18 x</p>
+                <img src="images/opslaan.png" alt="icon opslaan">
+                <p>9 x</p>
+            </footer>
         </article>
         <article>
-            <a href="">
-                <img src="images/recept.JPG" alt="preview verhaal">
-                <h4>RECEPT</h4>
-            </a>
+            <img src="images/Terugspoelen.png" alt="preview verhaal">
+            <h4>TERUGSPOELEN</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>5 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>18 x</p>
+                <img src="images/opslaan.png" alt="icon opslaan">
+                <p>9 x</p>
+            </footer>
+        </article>
+        <article>
+            <img src="images/vader-zoon.png" alt="preview verhaal">
+            <h4>VAN VADER TOT ZOON</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>5 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>18 x</p>
+                <img src="images/opslaan.png" alt="icon opslaan">
+                <p>9 x</p>
+            </footer>
+        </article>
+        <article>
+            <img src="images/Nichterig.png" alt="preview verhaal">
+            <h4>NICHTERIG</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>5 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>18 x</p>
+                <img src="images/opslaan.png" alt="icon opslaan">
+                <p>9 x</p>
+            </footer>
         </article>
     </section>
 
