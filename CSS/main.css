@@ -37,10 +37,10 @@ h3 {
 }
 
 h1 {
-    font-size: 2em;
     color: white;
     padding-left: .5em;
-    width: 7em;
+    font-size: 1.5em;
+    width: 50%;
     background-color: #242f6b;
 }
 
@@ -48,7 +48,7 @@ h1 {
     body {
         display: grid;
         grid-template-columns: 1fr 30em 1fr;
-        grid-template-rows: 4em 17em auto;
+        grid-template-rows: 4em 25em auto;
     }
     header {
         grid-column-start: 1;
@@ -74,7 +74,7 @@ h1 {
     body {
         display: grid;
         grid-template-columns: 1fr 50em 1fr;
-        grid-template-rows: 4em 20em auto;
+        grid-template-rows: 4em 25em auto;
     }
     header {
         grid-column-start: 1;
@@ -100,7 +100,7 @@ h1 {
     body {
         display: grid;
         grid-template-columns: 1fr 60em 1fr;
-        grid-template-rows: 4em 20em auto;
+        grid-template-rows: 4em 25em auto;
     }
     header {
         grid-column-start: 1;
@@ -111,6 +111,7 @@ h1 {
         grid-column-end: 3;
         grid-row-start: 2;
     }
+
     section:nth-of-type(2) {
         grid-column-start: 2;
         grid-row-start: 3;
@@ -241,13 +242,14 @@ section:nth-of-type(2) {
 }
 
 footer {
-    display: nne;
     background-color: white;
     border: 1px solid lightgrey;
     margin-top: -10em;
     margin-left: 1em;
     margin-right: 4em;
     padding-top: .5em;
+    opacity: 0;
+    transition: .3s;
 }
 
 footer p {
@@ -274,9 +276,17 @@ section:nth-of-type(2) article {
     flex-direction: column;
     background-color: white;
     width: 12em;
-    height: 15em;
+    height: 14em;
     margin: 1em;
     border-bottom: 5px solid lightgrey;
+    }
+
+img[alt*="opslaan"]{
+
+}
+
+section:nth-of-type(2) article:hover footer{
+    opacity: 1;
 }
 
 img[src="images/uitgelicht.JPG"] {
@@ -298,6 +308,7 @@ h3 {
 h4 {
     color: #242f6b;
     margin-top: .5em;
+    text-transform:uppercase;
 }
 
 article>img {

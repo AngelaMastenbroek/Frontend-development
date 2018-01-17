@@ -66,4 +66,18 @@ window.onclick = function(event) {
   }
 }
 
+/*
+function veranderPlaatje()
+{
+  if(img.getAttribute('src') == 'images/opslaan.png')
+  {
+    img.src = 'images/vink.png';
+  }
+  else
+  {
+    img.src = 'images/opslaan.png';
+  }
+}
 
+document.getElementsByName("footer>img").addEventListener("click", veranderPlaatje());
+*/

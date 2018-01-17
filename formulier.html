@@ -8,19 +8,28 @@
 </head>
 
 <body>
-
-    <img src="images/logoNS.JPG" alt="Logo NS">
+   <header>
+        <form>
+            <input type="search" placeholder="Zoeken">
+            <input type="submit" value="Zoeken">
+        </form>
+        <a href="overzicht.html"><img src="images/logoNS.JPG" alt="Logo van NS">
+        </a>
+        <a href="formulier.html"><img src="images/account.jpg" alt="account icon"></a>
+    </header>
+   <section>
     <form>
         <fieldset>
             <legend>NS verhalensite inloggen:</legend>
-            <label for=naam>Gebruikersnaam: </label>
-            <input type="text" id=naam>
+            <label for=naam>Gebruikersnaam/email: </label>
+            <input type="email" id=naam>
             <label for=wachtwoord>Wachtwoord: </label>
             <input type="password" id=wachtwoord>
             <a href="overzicht.html">Log in</a>
         </fieldset>
     </form>
     <a href="https://login.ns.nl/personal/sign-up-unp">Nog geen account?</a>
+    </section>
 </body>
 
 </html>

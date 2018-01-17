@@ -1,8 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: hind;
-    display: flex;
-    justify-content: center;
 }
 
 html {
@@ -10,23 +8,63 @@ html {
 }
 
 body {
-    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 22em 1fr;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    min-width: 22em;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+header {
+    background-color: white;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header>a>img[alt*="account"]{
+    height: 2.5em;
+}
+
+header>form>[type="submit"] {
+    display: none;
+}
+
+header>form>[type="search"] {
+    width: 9em;
+}
+
+header img[alt*="Logo"]{
+    display: flex;
+    height: 4em;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 3em;
 }
 
 title {
     display: none;
 }
 
-img {
-    width: 15em;
-    height: 8em;
-}
-
 form {
-    max-width: 15em;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -49,19 +87,18 @@ label {
     justify-content: flex-start;
 }
 
-fieldset [type="text"] {
-    background-color: #e6e6e9;
-}
-
-fieldset [type="password"] {
-    background-color: #e6e6e9;
-}
-
 legend {
     font-size: 1.5em;
 }
 
+section input {
+    background-color: #e6e6e9;
+    width: 15em;
+}
+
 fieldset {
+    display: flex;
+    flex-wrap: wrap;
     border: none;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -70,21 +107,51 @@ fieldset {
 fieldset a {
     text-decoration: none;
     color: black;
-    justify-content: flex-start;
     background-color: #fcc317;
     padding-left: .5em;
+    padding-right: .5em;
     width: 4em;
     margin-top: 1em;
     margin-left: .5em;
-    border: solid #ebb100;
+    border:.1em solid #ebb100;
 }
 
 fieldset a:hover {
     background-color: #ebb100;
 }
 
-body>a {
+section>a {
+    display: flex;
+    justify-content: center;
     background-color: white;
     padding-bottom: 1em;
     color: black;
+}
+
+@media (min-width: 30em) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 30em 1fr;
+    }
+
+    section {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+@media (min-width: 50em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 50em 1fr;
+    }
+
+     section {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+@media (min-width: 60em) {
+
 }

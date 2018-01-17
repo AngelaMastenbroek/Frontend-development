@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: hind;
+}
+
+html {
+    background-color: #e6e6e9;
+}
+
+body {
+    background-color: #e6e6e9;
+    display: grid;
+    grid-template-columns: 1fr 22em 1fr;
+    min-width: 22em;
+}
+
+@media (min-width: 30em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 30em 1fr;
+    }
+}
+
+@media (min-width: 50em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 50em 1fr;
+    }
+}
+
+@media (min-width: 60em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 60em 1fr;
+    }
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+header>form>[type="submit"] {
+    display: none;
+}
+
+img[alt=""] {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+}
+
+img[alt="recept"] {
+    grid-column-start: 2;
+    width: 100%;
+}
+
+h2 {
+    text-transform:uppercase;
+}
+
+section:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 4em;
+    min-width: 22.5em;
+}
+
+img~section {
+    grid-column-start: 2;
+    height: 20em;
+}
+
+h1 {
+    margin-bottom: -1em;
+}
+
+section:nth-of-type(2) article {
+    display: grid;
+    grid-template-columns: 4em auto;
+    background-color: white;
+    margin: .5em;
+    border: .1em solid lightgray;
+    height: 5em;
+}
+
+article p {
+    grid-column-start: 2;
+    height: 2em;
+}
+
+article p:first-of-type{
+    margin-bottom: -1em;
+    font-size: .9em;
+}
+
+article p:nth-of-type(2)  {
+    margin-top: -1em;
+}
+
+
+a[href*="overzicht"] {
+    grid-column-start: 2;
+    text-decoration: none;
+    color: black;
+    width: 4em;
+    padding-top: .5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+img[alt*="icon"] {
+    height: 2em;
+    width: auto;
+    margin-left: 1em;
+}
+
+header {
+    background-color: white;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header>a>img {
+    height: 2.5em;
+}
+
+header img {
+    display: flex;
+    height: 4em;
+}
