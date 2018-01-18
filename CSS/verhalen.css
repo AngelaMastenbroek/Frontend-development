@@ -57,6 +57,7 @@ img[alt="recept"] {
 
 h2 {
     text-transform:uppercase;
+    color: #242f6b;
 }
 
 section:first-of-type {
@@ -75,16 +76,21 @@ img~section {
 }
 
 h1 {
-    margin-bottom: -1em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    color: #242f6b;
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
 section:nth-of-type(2) article {
     display: grid;
     grid-template-columns: 4em auto;
     background-color: white;
-    margin: .5em;
     border: .1em solid lightgray;
     height: 5em;
+    grid-column-start: 1;
+    max-width: 35em;
 }
 
 article p {
@@ -101,6 +107,13 @@ article p:nth-of-type(2)  {
     margin-top: -1em;
 }
 
+section:nth-of-type(2) {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: auto 4em;
+    grid-template-rows: 3em auto;
+}
+
 
 a[href*="overzicht"] {
     grid-column-start: 2;
@@ -110,12 +123,19 @@ a[href*="overzicht"] {
     padding-top: .5em;
     font-size: 1em;
     font-weight: bold;
+    color: #242f6b;
 }
 
 img[alt*="icon"] {
     height: 2em;
     width: auto;
     margin-left: 1em;
+}
+
+img[alt*="plus"] {
+    width: 2.5em;
+    grid-column-start: 2;
+    grid-row-start: 1;
 }
 
 header {
