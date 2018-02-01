@@ -42,6 +42,7 @@ header {
 
 header>form>[type="submit"] {
     display: none;
+
 }
 
 img[alt=""] {

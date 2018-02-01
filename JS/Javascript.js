@@ -1,3 +1,5 @@
+/* code van: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown  */
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction1() {
@@ -65,19 +67,3 @@ window.onclick = function(event) {
     }
   }
 }
-
-/*
-function veranderPlaatje()
-{
-  if(img.getAttribute('src') == 'images/opslaan.png')
-  {
-    img.src = 'images/vink.png';
-  }
-  else
-  {
-    img.src = 'images/opslaan.png';
-  }
-}
-
-document.getElementsByName("footer>img").addEventListener("click", veranderPlaatje());
-*/
