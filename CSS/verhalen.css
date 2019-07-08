@@ -42,7 +42,6 @@ header {
 
 header>form>[type="submit"] {
     display: none;
-
 }
 
 img[alt=""] {
@@ -141,7 +140,8 @@ img[alt*="plus"] {
 
 header {
     background-color: white;
-    height: 4em;
+    height: 5em;
+    margin-bottom: 1em;
     width: 100%;
     display: flex;
     align-items: center;

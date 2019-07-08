@@ -10,6 +10,7 @@ html {
 body {
     display: grid;
     grid-template-columns: 1fr 22em 1fr;
+    grid-template-rows: 5em auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -23,7 +24,7 @@ header {
 
 header {
     background-color: white;
-    height: 4em;
+    height: 5em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -50,9 +51,7 @@ header img[alt*="Logo"]{
 }
 
 section{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    grid-row-start: 2;
     justify-content: center;
     background-color: white;
     grid-column-start: 2;
@@ -83,17 +82,43 @@ fieldset>[type="submit"]:hover {
 }
 
 label {
-    display: flex;
-    justify-content: flex-start;
+    display: none;
 }
 
 legend {
     font-size: 1.5em;
+    justify-content: center;
 }
 
 section input {
     background-color: #e6e6e9;
     width: 15em;
+    height: 2em;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+section input:focus {
+    background-color: #d6d6d6;
+    outline: none;
+}
+
+input[value="Aanmelden"] {
+    width: 6em;
+    font-size: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[value="Inloggen"] {
+    width: 5em;
+    font-size: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 fieldset {
@@ -110,10 +135,14 @@ fieldset a {
     background-color: #fcc317;
     padding-left: .5em;
     padding-right: .5em;
-    width: 4em;
+    width: 6em;
     margin-top: 1em;
     margin-left: .5em;
     border:.1em solid #ebb100;
+}
+
+#login {
+    width: 5em;
 }
 
 fieldset a:hover {

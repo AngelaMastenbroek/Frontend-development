@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NS verhalensite</title>
+    <link rel="stylesheet" href="CSS/filter.css">
+    <script src="JS/Javascript.js"></script>
+</head>
+
+<body>
+    <header>
+        <form>
+            <input type="submit" value="Zoeken">
+        </form>
+        <img src="images/logoNS.JPG" alt="Logo van NS">
+        <a href="formulier.html"><img src="images/account.jpg" alt="account icon"></a>
+    </header>
+
+    <section>
+       <section class="block">
+        <img src="images/thema-boeken.jpg" alt="">
+        <section class="text-block">
+        <h1>99 verhalen</h1>
+        </section>
+        </section>
+       <ul class="navigation">
+          <li><a href="#">Verhalen</a>
+          <ul class="dropdown">
+        <li><a href="overzicht.html">Alle verhalen</a></li>
+        <li><a href="meest-gelezen.html">Meest gelezen</a></li>
+        <li><a href="meest-geliked.html">Meest geliked</a></li>
+        <li><a href="aanbevolen.html">Aanbevolen voor jou</a></li>
+      </ul>
+         </li>
+          <li><a href="#">Voor jou</a>
+          <ul class="dropdown">
+        <li><a href="recent.html">Recent gelezen</a></li>
+        <li><a href="opgeslagen.html">Opgeslagen</a></li>
+        <li><a href="geliked.html">Geliked</a></li>
+        <li><a href="niet-gelezen.html">Nog niet gelezen</a></li>
+      </ul>
+         </li>
+          <li><a href="#">Filter</a>
+          <ul class="dropdown">
+        <li><a href="0-10.html">0 - 10 min leestijd</a></li>
+        <li><a href="11-20.html">11 - 20 min leestijd</a></li>
+        <li><a href="20-langer.html">20 min en langer</a></li>
+        <li><a href="color.html">Full color</a></li>
+        <li><a href="zw.html">Zwart - wit</a></li>
+      </ul>
+      </li>
+    </ul>
+    </section>
+    <h3>Alle verhalen</h3>
+    <h5>Zwart - wit</h5>
+    <section>
+        <a href="ongeluk.html">
+            <article>
+                <img src="images/ongeluk.JPG" alt="preview verhaal">
+                <h4>ongeluk</h4>
+                <footer>
+                    <img src="images/klok.png" alt="icon tijd">
+                    <p>5 min</p>
+                    <img src="images/hart.png" alt="icon hart" id="hart">
+                    <p>18</p>
+                </footer>
+            </article>
+        </a>
+
+<section id="bar">Dit verhaal is nu niet beschikbaar</section>
+
+        <article onclick="myFunction(this)">
+            <img src="images/angst.png" alt="preview verhaal">
+            <h4>angst</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>19 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>16</p>
+            </footer>
+        </article>
+        <article onclick="myFunction(this)">
+            <img src="images/Terugspoelen.png" alt="preview verhaal">
+            <h4>terugspoelen</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>12 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>10</p>
+            </footer>
+        </article>
+        <article onclick="myFunction(this)">
+            <img src="images/vader-zoon.png" alt="preview verhaal">
+            <h4>van vader tot zoon</h4>
+            <footer>
+                <img src="images/klok.png" alt="icon tijd">
+                <p>21 min</p>
+                <img src="images/hart.png" alt="icon hart">
+                <p>16</p>
+            </footer>
+        </article>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+</body>
+
+</html>

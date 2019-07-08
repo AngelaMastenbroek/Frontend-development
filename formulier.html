@@ -10,7 +10,6 @@
 <body>
    <header>
         <form>
-            <input type="search" placeholder="Zoeken">
             <input type="submit" value="Zoeken">
         </form>
         <a href="overzicht.html"><img src="images/logoNS.JPG" alt="Logo van NS">
@@ -18,17 +17,23 @@
         <a href="formulier.html"><img src="images/account.jpg" alt="account icon"></a>
     </header>
    <section>
-    <form>
+    <form action="overzicht-ingelogd.html">
         <fieldset>
-            <legend>NS verhalensite inloggen:</legend>
-            <label for=naam>Gebruikersnaam/email: </label>
-            <input type="email" id=naam>
+            <legend>NS verhalensite account aanmaken:</legend>
+            <label for=naam>Gebruikersnaam: </label>
+            <input type="name" id=naam placeholder="Gebruikersnaam" required/>
             <label for=wachtwoord>Wachtwoord: </label>
-            <input type="password" id=wachtwoord>
-            <a href="overzicht.html">Log in</a>
+            <input type="password" id=wachtwoord placeholder="Wachtwoord" required/>
+            <label for=wachtwoord>Wachtwoord herhalen: </label>
+            <input type="password" id=wachtwoord placeholder="Wachtwoord herhalen" required/>
+            <label for=naam>Email: </label>
+            <input type="email" id=naam placeholder="Email" required/>
+            <label for=naam>Email herhalen: </label>
+            <input type="email" id="email input" placeholder="Email herhalen" required/>
+            <input type="submit" value="Aanmelden">
         </fieldset>
     </form>
-    <a href="https://login.ns.nl/personal/sign-up-unp">Nog geen account?</a>
+    <a href="formulier-2.html">Al eerder een account aangemaakt?</a>
     </section>
 </body>
 

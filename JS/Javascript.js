@@ -1,69 +1,36 @@
-/* code van: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown  */
+// BAR
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
 function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show");
+    var x = document.getElementById("bar1");
+    x.className = "show";
+    setTimeout(function () {
+        x.className = x.className.replace("show", "");
+    }, 3000);
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn1')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content1");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-// ============================================
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
 function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
+    var x = document.getElementById("bar2");
+    x.className = "show";
+    setTimeout(function () {
+        x.className = x.className.replace("show", "");
+    }, 3000);
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn2')) {
+// SCROLL TO TOP
 
-    var dropdowns = document.getElementsByClassName("dropdown-content2");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
     }
-  }
 }
 
-
-// ==================================
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction3() {
-    document.getElementById("myDropdown3").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn3')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content3");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
